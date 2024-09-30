@@ -1,0 +1,28 @@
+name: Node.js Project Deployment
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm install pm2 -g
+      - run: npm test # Assuming you have tests in your project
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: pm2 delete all || true # Ignore errors if no PM2 process exists
+      - run: pm2 start index.js
