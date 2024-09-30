@@ -22,10 +22,7 @@ jobs:
       # Step 4: Install PM2 globally
       - run: npm install pm2 -g
 
-      # Step 5: Build your application (optional, if you have a build step)
-      - run: npm run build # Skip or adjust if no build script
-
-      # Step 6: Run tests (optional, based on your test setup)
+      # Step 5: Run tests (optional, based on your test setup)
       - run: npm test
 
   deploy:
