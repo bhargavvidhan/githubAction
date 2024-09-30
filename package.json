@@ -1,0 +1,22 @@
+{
+  "name": "github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhargavvidhan/githubAction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhargavvidhan/githubAction/issues"
+  },
+  "homepage": "https://github.com/bhargavvidhan/githubAction#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
