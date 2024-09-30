@@ -48,7 +48,3 @@ jobs:
       # Step 6: Start your application using PM2
       - run: |
           pm2 start index.js --name "my-app"
-
-      # Step 6: Start your application using PM2
-      - run: |
-          pm2 logs my-app
