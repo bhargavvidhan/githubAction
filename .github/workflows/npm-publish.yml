@@ -1,8 +1,8 @@
 name: Node.js Project Deployment
 
 on:
-  release:
-    types: [created]
+    push:
+        branches: [ main ]
 
 jobs:
   build:
