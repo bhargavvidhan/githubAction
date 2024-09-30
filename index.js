@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get('/', (req, res) => {
-    res.send([{ name: 1, value: 'one' }, { name: 2, value: 'two' }]);
+    res.send([{ name: 1, value: 'one' }, { name: 2, value: 'two' }, { name: 3, value: 'three' }]);
 });
 
 
