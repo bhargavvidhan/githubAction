@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 
 const port = 3000;
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT);
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
